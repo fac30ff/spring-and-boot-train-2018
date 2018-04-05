@@ -1,6 +1,5 @@
 package com.naya.personbd.services;
 
-import com.naya.mainmethodstarter.Main;
 import org.springframework.stereotype.Service;
 
 /**
@@ -8,7 +7,6 @@ import org.springframework.stereotype.Service;
  */
 
 public class MyService {
-    @Main
     public void doWork(){
         System.out.println("WORKING.......");
     }
