@@ -1,16 +1,15 @@
 package ru.exam.examinator;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Map;
 
+@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class ExamResult {
   int                  price;
-  int                  result;
+  @Singular
   Map<String, Integer> results;
 }

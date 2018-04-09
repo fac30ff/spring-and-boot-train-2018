@@ -1,0 +1,6 @@
+exam:
+  types:
+    math: http://localhost:8081
+    phys: http://localhost:8082
+
+

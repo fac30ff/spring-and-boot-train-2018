@@ -1,4 +1,4 @@
-package physics;
+package math;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Random;
 
 @SpringBootApplication
-public class PhysApp {
+public class MathApp {
   public static void main(String[] args) {
-    SpringApplication.run(PhysApp.class, args);
+    SpringApplication.run(MathApp.class, args);
   }
 
   @RestController
@@ -25,7 +25,7 @@ public class PhysApp {
     @RequestMapping(consumes = "*/*")
     public Exam exam(@RequestParam String id) {
       return Exam.builder()
-          .examine("phys")
+          .examine("math")
           .result(new Random(5).nextInt(5))
           .build();
     }
